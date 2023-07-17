@@ -18,7 +18,6 @@ function Portfolio() {
             </div>
             {/* Project Rows */}
             <div className="container">
-
                 <div class="row ">
                     <div class="col-md-6">
                         <div class="h-100 p-5">
