@@ -5,6 +5,8 @@ import './App.css'
 import Nav from './Nav'
 import AboutMe from './AboutMe'
 import Portfolio from './Portfolio'
+import Contact from './Contact'
+import Resume from './Resume'
 
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
     <>
       <Nav />
       {/* <AboutMe /> */}
-      <Portfolio />
+      {/* <Portfolio /> */}
+      {/* <Contact /> */}
+      <Resume />
     </>
   )
 }
