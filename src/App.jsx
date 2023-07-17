@@ -4,13 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Nav from './Nav'
 import AboutMe from './AboutMe'
+import Portfolio from './Portfolio'
 
 
 function App() {
   return (
     <>
       <Nav />
-      <AboutMe />
+      {/* <AboutMe /> */}
+      <Portfolio />
     </>
   )
 }

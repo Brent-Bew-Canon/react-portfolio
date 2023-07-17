@@ -6,6 +6,10 @@ a {
     text-decoration: none;
 }
 
+.nav-link:hover {
+    color: #04efd0;
+}
+
 /* h1 {
     color: whitesmoke
 } */
@@ -13,6 +17,7 @@ a {
 .heading-underline {
     color: whitesmoke;
     position: relative;
+    font-size: 3.5em;
 }
 
 .heading-underline::after {
@@ -32,10 +37,43 @@ a {
     color: #00c2a8
 }
 
+.green-bg {
+    background-color: #00c2a8
+}
+
+.white-bg {
+    background-color: whitesmoke
+}
+
 .white-text {
     color: whitesmoke;
 }
 
-/* .black {
-    background-color: black;
-} */
+.dark-bg {
+    background-color: #171717;
+}
+
+.skill-item {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.2em;
+    background: whitesmoke;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #00c2a8;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.white-btn:hover {
+    background-color: #00c2a8;
+    color: whitesmoke;
+}
+
+.cursor-cross {
+    cursor: crosshair;
+}
