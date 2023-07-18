@@ -34,9 +34,9 @@ function AboutMe({ handlePageChange }) {
                         </div>
                     </div>
                 </div>
-                <div className="fog">
+                {/* <div className="fog">
                     <img src={fog3} style={{ "--i": 8 }} />
-                </div>
+                </div> */}
             </div>
         </main>
 

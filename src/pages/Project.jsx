@@ -20,7 +20,7 @@ function ProjectHeader(i) {
                 </div>
             </div>
             <div className="row">
-                <div className="col-8 mx-auto">
+                <div className="col-10 mx-auto">
                     <img src={el.image} className="w-100" alt="" />
                 </div>
             </div>
@@ -34,6 +34,11 @@ function ProjectMain(i) {
     )
 }
 
+function Screenshots(i) {
+    return elements[i].screenshots.map(el =>
+        <img src={el} className="w-100 py-5 rounded" alt="" />)
+}
+
 function Links(i) {
     let el = elements[i]
     return (
@@ -44,7 +49,7 @@ function Links(i) {
     )
 }
 
-function Focus({ id }) {
+function Project({ id }) {
     return (
         <section>
             <div className="container">
@@ -53,11 +58,20 @@ function Focus({ id }) {
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Project Overview</h2>
                         {ProjectMain(id)}
+                        <h2 className='green-text fs-1 py-5'>Screenshots</h2>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-10 mx-auto">
+
+                        <div className=''>
+                            {Screenshots(id)}
+                        </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-8 mx-auto">
-                        <h2 className='green-text fs-1 py-5'>Tools Used </h2>
+                        <h2 className='green-text fs-1 py-5'>Tools Used</h2>
                         <div className="skills">
                             {Tools(id)}
                         </div>
@@ -65,7 +79,7 @@ function Focus({ id }) {
                 </div>
                 <div className="row">
                     <div className="col-8 mx-auto">
-                        <h2 className='green-text fs-1 py-5'>Links  </h2>
+                        <h2 className='green-text fs-1 py-5'>Links</h2>
                         {Links(id)}
                     </div>
                 </div>
@@ -74,4 +88,4 @@ function Focus({ id }) {
     )
 }
 
-export default Focus;
+export default Project;
