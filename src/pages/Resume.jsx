@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import resume from './assets/images/resume.pdf'
-import './App.css'
+import resume from '../assets/images/resume.pdf'
+import '../App.css'
 
 function Resume() {
     return (

@@ -3,8 +3,8 @@ import AboutMe from './AboutMe'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Resume from './Resume'
-import Footer from './Footer'
-import Nav from './Nav'
+import Footer from '../components/Footer'
+import Nav from '../components/Nav'
 
 export default function homePageContainer() {
   const [page, setPage] = useState('AboutMe')

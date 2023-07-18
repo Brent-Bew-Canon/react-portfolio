@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import brent from './assets/images/Brent_headshot.jpg'
-import './App.css'
+import brent from '../assets/images/Brent_headshot.jpg'
+import '../App.css'
 
 function Contact() {
     return (
