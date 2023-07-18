@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css'
 
-function Nav({ page, handlePageChange }) {
+function Nav({ handlePageChange }) {
     return (
         <nav className="navbar dark-bg">
             <div className="container-fluid">

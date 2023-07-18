@@ -25,13 +25,11 @@ export default function homePageContainer() {
   const handlePageChange = (page) => setPage(page);
 
   return (
-
     <>
-      <Nav page={page} handlePageChange={handlePageChange} />
+      <Nav handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
     </>
   )
 }
 
-// export default HomePage
