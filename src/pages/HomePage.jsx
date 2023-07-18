@@ -5,16 +5,18 @@ import Contact from './Contact'
 import Resume from './Resume'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
+import Focus from './Focus'
 
 export default function homePageContainer() {
   const [page, setPage] = useState('AboutMe')
 
   const renderPage = () => {
     if (page === 'AboutMe') {
-      return <AboutMe />;
+      return <AboutMe handlePageChange={handlePageChange} />;
     }
     if (page === 'Portfolio') {
-      return <Portfolio />;
+      return <Focus />;
+      // return <Portfolio />;
     }
     if (page === 'Contact') {
       return <Contact />;
@@ -28,7 +30,7 @@ export default function homePageContainer() {
     <>
       <Nav handlePageChange={handlePageChange} />
       {renderPage()}
-      <Footer />
+      <Footer handlePageChange={handlePageChange} />
     </>
   )
 }

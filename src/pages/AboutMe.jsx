@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css'
 import fog3 from '../assets/images/fog3.png'
 
-function AboutMe() {
+function AboutMe({ handlePageChange }) {
     return (
         <main className=" ">
             <div className="pt-5">
@@ -20,7 +20,7 @@ function AboutMe() {
                         </p>
                         <p className="white-text fs-4">I'm currently pursing work as a full stack developer, so take a look at my projects and let's get in touch!
                         </p>
-                        <button className="btn white-btn fs-4 mt-4 green-text py-2 px-4 white-bg">Contact</button>
+                        <a className="btn white-btn fs-4 mt-4 green-text py-2 px-4 white-bg" href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>See Portfolio</a>
 
                     </div>
                     <div className="col-6">
@@ -43,7 +43,7 @@ function AboutMe() {
                         </div>
                     </div>
                 </div>
-                <div class="fog">
+                <div className="fog">
                     <img src={fog3} style={{ "--i": 8 }} />
                 </div>
             </div>
