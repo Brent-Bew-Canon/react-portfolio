@@ -41,7 +41,7 @@ export const elements = [
         subTitle: "Find new movies to watch, save them, and rate them!",
         liveLink: "https://movie-finder-bb.herokuapp.com/",
         repoLink: "https://github.com/Brent-Bew-Canon/Cinema-Finder",
-        overview: ['hi', 'hello'],
+        overview: ['This app let\'s the user browse from a list of movies and rate them on a scale of 1 - 10. Each user has their own profile on the app, so the movie ratings are exclusive to them.', 'Additionally, the user can also choose to save a movie to a personal list of "saved movies". For example, if the user comes across a new movie that they would like to watch in the future, they can add that movie to the list. After they have watched it, the user can then delete the movie from the list.', 'This was a collaborative project between 4 developers. My role was focused on enabling the save and delete functionality of the movies in the application. This was done by creating the MYSQL tables through Sequelize, using JavaScript to enable user interaction with the movies, and creating the correct routing through Express.js to update the database accordingly.'],
     },
     {
         name: "Social API",
@@ -53,7 +53,7 @@ export const elements = [
         subTitle: "Manage your social media site on the back-end.",
         liveLink: "#",
         repoLink: "https://github.com/Brent-Bew-Canon/social-api",
-        overview: ['hi', 'hello'],
+        overview: ['This web app models the functionality of the backend of a social media site. Users can create and are linked to "thoughts", the equivalent of posts, and can post "reactions" or comments to thoughts. This is the back-end portion only and does not have a GUI.', 'This app uses MongoDB for the database. Check out the GitHub Repo for a walkthrough video of the application'],
     },
     {
         name: "Tech Blogger",
@@ -65,7 +65,7 @@ export const elements = [
         subTitle: "Share your thoughts on this technology blog!",
         liveLink: "#",
         repoLink: "https://github.com/Brent-Bew-Canon/tech-blogger",
-        overview: ['hi', 'hello'],
+        overview: ['The Tech Blogger app was made to replicate the functionality of a real working blog. Users can create profiles with their usernames and passwords hashed via Bcrypt. They can also create posts for everyone on the blog site to see', 'Each post a user creates is saved to their profile and available to edit later. Users can also comment on other posts and the post links that comment to their username and the time they commented. This app uses MYSQL and Sequelize for the database functionality'],
     },
     {
         name: "Super Q",
@@ -77,7 +77,7 @@ export const elements = [
         subTitle: "Sign up to be a beta tester for this new music app!",
         liveLink: "https://www.superqapp.com",
         repoLink: "https://github.com/Brent-Bew-Canon/superq",
-        overview: ['hi', 'hello'],
+        overview: ['SuperQ is a new music streaming app in development that allows you to make playlists of songs across different streaming services. I was contracted to create a simple landing page for them with a sign up form for beta testers.', 'I deployed this app at superqapp.com via IONOS web hosting services.'],
     },
     {
         tools: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express.js', 'React', 'Node.js', 'MYSQL', 'GIT', 'Heroku', 'Technical SEO', 'Ahrefs'],

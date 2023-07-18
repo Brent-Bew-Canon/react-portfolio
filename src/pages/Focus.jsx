@@ -44,29 +44,29 @@ function Links(i) {
     )
 }
 
-function Focus() {
+function Focus({ id }) {
     return (
         <section>
             <div className="container">
-                {ProjectHeader(0)}
+                {ProjectHeader(id)}
                 <div className="row">
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Project Overview</h2>
-                        {ProjectMain(0)}
+                        {ProjectMain(id)}
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Tools Used </h2>
                         <div className="skills">
-                            {Tools(0)}
+                            {Tools(id)}
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Links  </h2>
-                        {Links(0)}
+                        {Links(id)}
                     </div>
                 </div>
             </div>
