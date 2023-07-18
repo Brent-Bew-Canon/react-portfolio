@@ -33,7 +33,7 @@ function Portfolio({ handlePageChange }) {
                 <h1 className="text-center heading-underline">Portfolio</h1>
             </div>
             <div className="pb-5">
-                <p className="text-center mt-5 white-text fs-4">Modern web applications with a focus on responsive design</p>
+                <p className="text-center mt-5 white-text fs-4 mx-2">Modern web applications with a focus on responsive design</p>
             </div>
             {/* Project Rows */}
             <div className="container">

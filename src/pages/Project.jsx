@@ -43,8 +43,8 @@ function Links(i) {
     let el = elements[i]
     return (
         <div className=''>
-            <a href={el.liveLink} className="btn green-text white-bg fs-4 px-3 py-1 me-4 white-btn">Live Link</a>
-            <a href={el.repoLink} className="btn green-text white-bg fs-4 px-3 py-1 white-btn">GitHub Repo</a>
+            <a href={el.liveLink} className="btn green-text white-bg fs-4 px-3 py-1 me-4 white-btn mb-4">Live Link</a>
+            <a href={el.repoLink} className="btn green-text white-bg fs-4 px-3 py-1 white-btn mb-4">GitHub Repo</a>
         </div>
     )
 }
