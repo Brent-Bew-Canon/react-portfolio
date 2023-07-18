@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../App.css'
 import fog3 from '../assets/images/fog3.png'
+import Tools from '../components/Tools'
+
 
 function AboutMe({ handlePageChange }) {
     return (
@@ -27,18 +29,7 @@ function AboutMe({ handlePageChange }) {
                         <h2 className="green-text fs-1 pb-4">My Skills</h2>
                         <div className="">
                             <div className="skills">
-                                <div className="skill-item white-btn cursor-cross">HTML</div>
-                                <div className="skill-item white-btn cursor-cross">CSS</div>
-                                <div className="skill-item white-btn cursor-cross">JavaScript</div>
-                                <div className="skill-item white-btn cursor-cross">MongoDB</div>
-                                <div className="skill-item white-btn cursor-cross">Express</div>
-                                <div className="skill-item white-btn cursor-cross">React</div>
-                                <div className="skill-item white-btn cursor-cross">Node.js</div>
-                                <div className="skill-item white-btn cursor-cross">MYSQL</div>
-                                <div className="skill-item white-btn cursor-cross">GIT</div>
-                                <div className="skill-item white-btn cursor-cross">Heroku</div>
-                                <div className="skill-item white-btn cursor-cross">Technical SEO</div>
-                                <div className="skill-item white-btn cursor-cross">Ahrefs</div>
+                                {Tools(6)}
                             </div>
                         </div>
                     </div>

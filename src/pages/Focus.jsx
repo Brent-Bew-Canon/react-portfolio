@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css'
-import cinema from '../assets/images/cinema.png'
 import { elements } from '../components/Elements'
+import Tools from '../components/Tools'
 
 
 function ProjectHeader(i) {
@@ -29,14 +29,18 @@ function ProjectHeader(i) {
 }
 
 function ProjectMain(i) {
-    return (
-        <p className="white-text fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptatem fugiat non reprehenderit culpa assumenda quidem veniam, dicta, numquam qui aspernatur optio delectus explicabo veritatis dignissimos recusandae nostrum repore rerum dolor pariatur facilis deleniti!</p>
+    return elements[i].overview.map(el =>
+        <p className="white-text fs-4 pb-4" key={el}>{el}</p>
     )
 }
 
-function Tools(i) {
-    return elements[i].tools.map(el =>
-        <div className="skill-item white-btn cursor-cross" key={el}>{el}</div>
+function Links(i) {
+    let el = elements[i]
+    return (
+        <div className=''>
+            <a href={el.liveLink} className="btn green-text white-bg fs-4 px-3 py-1 me-4 white-btn">Live Link</a>
+            <a href={el.repoLink} className="btn green-text white-bg fs-4 px-3 py-1 white-btn">GitHub Repo</a>
+        </div>
     )
 }
 
@@ -44,28 +48,25 @@ function Focus() {
     return (
         <section>
             <div className="container">
-                {ProjectHeader(1)}
+                {ProjectHeader(0)}
                 <div className="row">
-                    <div className="col-6 mx-auto">
+                    <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Project Overview</h2>
-                        {ProjectMain(1)}
+                        {ProjectMain(0)}
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-6 mx-auto">
+                    <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Tools Used </h2>
                         <div className="skills">
-                            {Tools(1)}
+                            {Tools(0)}
                         </div>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-6 mx-auto">
+                    <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Links  </h2>
-                        <div className=' '>
-                            <a href="" className="btn green-text white-bg fs-4 px-3 py-1 me-4 white-btn">Live Link</a>
-                            <a href="" className="btn green-text white-bg fs-4 px-3 py-1 white-btn">GitHub Repo</a>
-                        </div>
+                        {Links(0)}
                     </div>
                 </div>
             </div>
