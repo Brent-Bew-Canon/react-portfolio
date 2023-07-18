@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css'
+import fog3 from '../assets/images/fog3.png'
 
 function AboutMe() {
     return (
@@ -15,9 +16,9 @@ function AboutMe() {
                 <div className="row pt-5 justify-content-center gx-5">
                     <div className="col-6 text-left">
                         <h2 className=" green-text fs-1 pb-4">My Background</h2>
-                        <p className="white-text fs-4">Hey! It's Brent Buchanan and I'm a <span className="green-text">Full Stack Web Developer</span> located in Phoenix. My professional background includes experience in building full-stack web applications with the MERN stack and in digital marketing as an SEO specialist.
+                        <p className="white-text fs-4">Hey! It's Brent Buchanan, a <span className="green-text">Full Stack Web Developer</span> located in Phoenix. My professional background includes experience in building full-stack web applications with the MERN stack and in digital marketing as an SEO specialist.
                         </p>
-                        <p className="white-text fs-4">I'm currently enrolled in ASU's Full Stack Coding Bootcamp and am pursing work as a full stack developer. Take a look at my projects and let's get in touch!
+                        <p className="white-text fs-4">I'm currently pursing work as a full stack developer, so take a look at my projects and let's get in touch!
                         </p>
                         <button className="btn white-btn fs-4 mt-4 green-text py-2 px-4 white-bg">Contact</button>
 
@@ -41,6 +42,9 @@ function AboutMe() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="fog">
+                    <img src={fog3} style={{ "--i": 8 }} />
                 </div>
             </div>
         </main>

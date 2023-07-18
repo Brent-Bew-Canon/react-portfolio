@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import elements from '../components/Elements'
+import { elements } from '../components/Elements'
 import '../App.css'
 
 function ProjectCard() {
