@@ -83,6 +83,10 @@ a {
     height: 100vh;
 }
 
+.social {
+    width: 5vh;
+}
+
 /* Smokey Effect */
 
 .fog {

@@ -24,7 +24,8 @@ function Contact() {
                             <p className="white-text fs-3 pb-3">
                                 <span className="green-text">LinkedIn: </span><a href="https://www.linkedin.com/in/buchma/" className="white-text">linkedin.com/in/buchma/</a>
                             </p>
-                            <p className="white-text fs-3"> <span className="green-text">Email: </span> mrbuchmas@gmail.com</p>
+                            <p className="white-text fs-3 pb-3"> <span className="green-text">Email: </span> mrbuchmas@gmail.com</p>
+                            <p className="white-text fs-3"> <span className="green-text">GitHub: </span> <a href="https://github.com/Brent-Bew-Canon" className='white-text'>Brent-Bew-Canon</a></p>
                         </div>
                     </div>
                 </div>

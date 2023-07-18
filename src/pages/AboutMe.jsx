@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import '../App.css'
-import fog3 from '../assets/images/fog3.png'
+import github from '../assets/images/github-ico.png'
+import linkedIn from '../assets/images/linkedin-ico.png'
 import Tools from '../components/Tools'
 
 
 function AboutMe({ handlePageChange }) {
     return (
-        <main className=" ">
+        <main className="">
             <div className="pt-5">
                 <h1 className="text-center heading-underline">About Me</h1>
+            </div>
+            <div className="mx-auto text-center mt-5">
+                <a href="https://github.com/Brent-Bew-Canon"><img src={github} alt="" className='social mx-2' /></a>
+                <a href="https://www.linkedin.com/in/buchma/"><img src={linkedIn} alt="" className='social mx-2' /></a>
             </div>
             <div className="pb-5">
                 <p className="text-center mt-5 white-text fs-4 mx-3">Get to know a bit about my background and programming skills</p>
