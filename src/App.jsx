@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './pages/AboutMe'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
@@ -31,7 +30,6 @@ function App() {
           <Route
             path="/contact"
             element={<Contact />} />
-          {/* {renderPage()} */}
         </Routes>
         <Footer />
       </Router>
