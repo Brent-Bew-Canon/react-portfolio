@@ -41,7 +41,7 @@ function ProjectMain(i) {
 
 function Screenshots(i) {
     return elements[i].screenshots.map(el =>
-        <img src={el} className="w-100 py-5 rounded" alt="" />)
+        <img key={el} src={el} className="w-100 py-5 rounded" alt="" />)
 }
 
 function Links(i) {

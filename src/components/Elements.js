@@ -9,16 +9,16 @@ import blogger from '../assets/images/blogger.png'
 export const elements = [
     {
         name: "Photo Planner",
-        description: "A web app that assists a photographer in planning for a photo shoot using Google Maps API.",
-        tech: "HTML, CSS, JavaScript, Google Maps API, Bootstrap",
-        tools: ['HTML', 'CSS', 'JavaScrip', 'Google Maps API', 'Bootstrap'],
+        description: "A full stack MERN web app that assists a photographer in planning for a photo shoot using TomTom Maps API.",
+        tech: "HTML, CSS, JavaScript, MongoDB, Express.js, React.js, Node.js, TomTom Maps API, Bootstrap",
+        tools: ['HTML', 'CSS', 'JavaScript', 'MongoDb', 'Express.js', 'React.js', 'Node.js', 'TomTom Maps API', 'Bootstrap'],
         image: photo,
         id: 1,
         subTitle: "Plan your scheduled photography job with ease!",
-        liveLink: "https://brent-bew-canon.github.io/Plan-Photo-Shoot/",
+        liveLink: "https://photoplanner.netlify.app/",
         repoLink: "https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot",
-        overview: ['This app is designed to assist a real estate photographer plan their daily photo shoots regarding location, which equipment to pack, how many photos they need to take, and a general idea for any obvious flight restrictions for taking drone pictures.', 'The Google Map api generates a map view of the location by geolocating the address the user provides. The map is interactive - allowing the user to zoom in or out and switch to satellite view.', 'The number of photos is calculated by evaluating the given square footage of the property. Since airports are the most common flight restriction for drone pilots, the app asks for the user\'s best guess on proximity of the nearest airport. Then, it gives you a general idea on what your maximum legal altitude might be so you can come prepared.'],
-        screenshots: ['https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/public/assets/img/photo%20(1).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/public/assets/img/photo%20(2).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/public/assets/img/photo%20(3).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/public/assets/img/photo%20(4).png']
+        overview: ['This web application helps a real estate photographer plan his/her photo shoot when they get a new job. It utilizes the TomTom API to generate a map based on the inputted address. It then tells the user how many photos to take based on square footage and a ballpark estimate on any flight restrictions for possible drone photos based on proximity to airports.', 'Users can create profiles with a login password and create jobs that are saved to their profile. They can view these jobs via the "My Jobs" page.', 'This web app is built on the MERN stack, and I currently have the server and client hosted separately. The database structure is built with Mongoose and MongoDB. I used React Router to navigate through the different pages on the front end.', 'Future features soon to be added are ability to delete jobs, ability to modify job details, ability to upload photos via AWS S3 bucket, and ability to share viewable links to jobs with uploaded photos to potential clients.'],
+        screenshots: ['https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/photo%20(1).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/photo%20(2).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/photo%20(3).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/photo%20(4).png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/profile.png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/myjobs.png', 'https://github.com/Brent-Bew-Canon/Plan-Photo-Shoot/raw/master/client/public/assets/img/createjob.png']
     },
     {
         name: "Arizona Drone Photography",
