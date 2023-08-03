@@ -12,7 +12,7 @@ import Project from './pages/Project'
 function App() {
   return (
     <>
-      <Router basename="/react-portfolio">
+      <Router >
         <Nav />
         <Routes>
           <Route
