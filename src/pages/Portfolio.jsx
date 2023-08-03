@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { elements } from '../components/Elements'
 import '../App.css'
 
@@ -18,7 +19,7 @@ function ProjectCard({ handlePageChange }) {
                         <span className="green-text">Summary: </span>{el.description}
                     </p>
                     <p className="white-text fs-5"> <span className="green-text">Technologies Used: </span> {el.tech}</p>
-                    <a className="btn white-btn fs-4 mt-2 green-text px-4 white-bg" href={"#Project" + el.id} onClick={() => handlePageChange(`Project${el.id}`)}>Explore</a>
+                    <Link className="btn white-btn fs-4 mt-2 green-text px-4 white-bg" to={'/project'} state={{ id: el.id - 1 }}>Explore</Link>
                 </div>
             </div>
         </div>)

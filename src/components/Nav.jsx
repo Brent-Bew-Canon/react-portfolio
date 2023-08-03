@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'
 
 function Nav({ handlePageChange }) {
@@ -7,10 +8,10 @@ function Nav({ handlePageChange }) {
             <div className="container-fluid">
                 <a className="py-2 ps-3 white-text fs-2">Brent Buchanan</a>
                 <div className="d-flex pe-3" role="search">
-                    <a href="#AboutMe" onClick={() => handlePageChange('AboutMe')} className='mx-3 fs-5 green-text navi-link'>About</a>
-                    <a href="#Portfolio" onClick={() => handlePageChange('Portfolio')} className="mx-3 fs-5 green-text navi-link" >Portfolio</a>
-                    <a href="#Contact" onClick={() => handlePageChange('Contact')} className="mx-3 fs-5 green-text navi-link" >Contact</a>
-                    <a href="#Resume" onClick={() => handlePageChange('Resume')} className="mx-3 fs-5 green-text navi-link" >Resume</a>
+                    <Link className='mx-3 fs-5 green-text navi-link' to={'/'}>About</Link>
+                    <Link className='mx-3 fs-5 green-text navi-link' to={'/portfolio'}>Portfolio</Link>
+                    <Link className='mx-3 fs-5 green-text navi-link' to={'/resume'}>Resume</Link>
+                    <Link className='mx-3 fs-5 green-text navi-link' to={'/contact'}>Contact</Link>
                 </div>
             </div>
         </nav>

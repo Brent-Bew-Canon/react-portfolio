@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'
 
 function Footer({ handlePageChange }) {
@@ -9,7 +10,7 @@ function Footer({ handlePageChange }) {
                     <p className="ps-3 white-text fs-5 text-center">Brent Buchanan 2023</p>
                 </div>
                 <div className="col-sm-12 col-md-3  justify-content-center text-center pt-5" >
-                    <a className="ps-3 green-text fs-5 text-center" href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</a>
+                    <Link className="ps-3 green-text fs-5 text-center" to={'/contact'}>Contact</Link>
                 </div>
             </div>
         </div>

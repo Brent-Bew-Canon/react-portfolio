@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../App.css'
 import { elements } from '../components/Elements'
 import Tools from '../components/Tools'
@@ -49,15 +50,18 @@ function Links(i) {
     )
 }
 
-function Project({ id }) {
+function Project() {
+    let { state } = useLocation();
+    const projId = state.id;
+
     return (
         <section>
             <div className="container">
-                {ProjectHeader(id)}
+                {ProjectHeader(projId)}
                 <div className="row">
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Project Overview</h2>
-                        {ProjectMain(id)}
+                        {ProjectMain(projId)}
                         <h2 className='green-text fs-1 py-5'>Screenshots</h2>
                     </div>
                 </div>
@@ -65,7 +69,7 @@ function Project({ id }) {
                     <div className="col-10 mx-auto">
 
                         <div className=''>
-                            {Screenshots(id)}
+                            {Screenshots(projId)}
                         </div>
                     </div>
                 </div>
@@ -73,14 +77,14 @@ function Project({ id }) {
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Tools Used</h2>
                         <div className="skills">
-                            {Tools(id)}
+                            {Tools(projId)}
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-8 mx-auto">
                         <h2 className='green-text fs-1 py-5'>Links</h2>
-                        {Links(id)}
+                        {Links(projId)}
                     </div>
                 </div>
             </div>

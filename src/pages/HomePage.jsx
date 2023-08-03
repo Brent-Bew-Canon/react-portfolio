@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './AboutMe'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
@@ -10,45 +11,64 @@ import Project from './Project'
 export default function homePageContainer() {
   const [page, setPage] = useState('AboutMe')
 
-  const renderPage = () => {
-    if (page === 'AboutMe') {
-      return <AboutMe handlePageChange={handlePageChange} />;
-    }
-    if (page === 'Portfolio') {
-      // return <Project />;
-      return <Portfolio handlePageChange={handlePageChange} />;
-    }
-    if (page === 'Contact') {
-      return <Contact />;
-    }
-    if (page === 'Project1') {
-      return <Project id={0} />;
-    }
-    if (page === 'Project2') {
-      return <Project id={1} />;
-    }
-    if (page === 'Project3') {
-      return <Project id={2} />;
-    }
-    if (page === 'Project4') {
-      return <Project id={3} />;
-    }
-    if (page === 'Project5') {
-      return <Project id={4} />;
-    }
-    if (page === 'Project6') {
-      return <Project id={5} />;
-    }
-    return <Resume />;
-  };
+  // const renderPage = () => {
+  //   if (page === 'AboutMe') {
+  //     return <AboutMe handlePageChange={handlePageChange} />;
+  //   }
+  //   if (page === 'Portfolio') {
+  //     // return <Project />;
+  //     return <Portfolio handlePageChange={handlePageChange} />;
+  //   }
+  //   if (page === 'Contact') {
+  //     return <Contact />;
+  //   }
+  //   if (page === 'Project1') {
+  //     return <Project id={0} />;
+  //   }
+  //   if (page === 'Project2') {
+  //     return <Project id={1} />;
+  //   }
+  //   if (page === 'Project3') {
+  //     return <Project id={2} />;
+  //   }
+  //   if (page === 'Project4') {
+  //     return <Project id={3} />;
+  //   }
+  //   if (page === 'Project5') {
+  //     return <Project id={4} />;
+  //   }
+  //   if (page === 'Project6') {
+  //     return <Project id={5} />;
+  //   }
+  //   return <Resume />;
+  // };
 
-  const handlePageChange = (page) => setPage(page);
+  // const handlePageChange = (page) => setPage(page);
 
   return (
     <>
-      <Nav handlePageChange={handlePageChange} />
-      {renderPage()}
-      <Footer handlePageChange={handlePageChange} />
+      <Router>
+        <Nav />
+        <Routes>
+          <Route
+            path="/"
+            element={<AboutMe />} />
+          <Route
+            path="/resume"
+            element={<Resume />} />
+          <Route
+            path="/portfolio"
+            element={< Portfolio />} />
+          <Route
+            path="/project"
+            element={<Project />} />
+          <Route
+            path="/contact"
+            element={<Contact />} />
+          {/* {renderPage()} */}
+        </Routes>
+        <Footer />
+      </Router>
     </>
   )
 }
