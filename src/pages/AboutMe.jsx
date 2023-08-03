@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'
 import github from '../assets/images/github-ico.png'
 import linkedIn from '../assets/images/linkedin-ico.png'
@@ -27,7 +28,7 @@ function AboutMe({ handlePageChange }) {
                         </p>
                         <p className="white-text fs-4">I'm currently pursing work as a full stack developer, so take a look at my projects and let's get in touch!
                         </p>
-                        <a className="btn white-btn fs-4 mt-4 green-text py-2 px-4 white-bg" href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>See Portfolio</a>
+                        <Link className="btn white-btn fs-4 mt-4 green-text py-2 px-4 white-bg" to={'/portfolio'}>See Portfolio</Link>
 
                     </div>
                     <div className="col-sm-12 col-md-6 ">

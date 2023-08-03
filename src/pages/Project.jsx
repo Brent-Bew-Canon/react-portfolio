@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../App.css'
 import { elements } from '../components/Elements'
@@ -6,6 +6,10 @@ import Tools from '../components/Tools'
 
 
 function ProjectHeader(i) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     let el = elements[i]
     return (
         <div>

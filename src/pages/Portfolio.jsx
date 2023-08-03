@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { elements } from '../components/Elements'
 import '../App.css'
@@ -28,6 +28,11 @@ function ProjectCard({ handlePageChange }) {
 
 
 function Portfolio({ handlePageChange }) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <main className=" ">
             <div className="pt-5">

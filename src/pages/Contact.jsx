@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import brent from '../assets/images/Brent_headshot.jpg'
 import '../App.css'
 
 function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <main className=" ">
             <div className="pt-5">
