@@ -15,7 +15,7 @@ function Resume() {
                 <div className="row ">
                     <div className="col-md-12">
                         <div className="p-5">
-                            <iframe src="https://drive.google.com/file/d/1QZp1ZwHfdjgEVunfVQURCNKuvmXlRm2v/preview#fit=Fit" className="resume" allow="autoplay"></iframe>
+                            <iframe src="https://drive.google.com/file/d/1oeY9Pfs9exOyT4osW2ug3wE4DWoPKPIh/preview#fit=Fit" className="resume" allow="autoplay"></iframe>
                         </div>
                     </div>
                 </div>
