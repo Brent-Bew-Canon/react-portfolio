@@ -1,9 +1,9 @@
 import cinema from '../assets/images/cinema.png'
 import drone from '../assets/images/drone.png'
 import photo from '../assets/images/photo.png'
-import social from '../assets/images/social.png'
 import superq from '../assets/images/superq.png'
-import blogger from '../assets/images/blogger.png'
+import gym from '../assets/images/gymGenius.png'
+
 
 
 export const elements = [
@@ -34,12 +34,25 @@ export const elements = [
         screenshots: ['https://github.com/Brent-Bew-Canon/az-drone-photography/raw/main/assets/img/pricing.png', 'https://github.com/Brent-Bew-Canon/az-drone-photography/raw/main/assets/img/cart.png', 'https://github.com/Brent-Bew-Canon/az-drone-photography/raw/main/assets/img/calendar.png', 'https://github.com/Brent-Bew-Canon/az-drone-photography/raw/main/assets/img/schedule.png', 'https://github.com/Brent-Bew-Canon/az-drone-photography/raw/main/assets/img/purchase.png', 'https://github.com/Brent-Bew-Canon/az-drone-photography/raw/main/assets/img/cart-email.png']
     },
     {
+        name: "Gym Genius",
+        description: "A workout planning app that allows users to create and save workouts, and then view them for help in exercise planning.",
+        tech: "HTML, CSS, JavaScript, Node.js, Express.js, React.js, MongoDB, GraphQL, AWS S3, Heroku, JWT, API",
+        tools: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'GraphQL', 'AWS S3', 'Heroku', 'JWT', 'API'],
+        image: gym,
+        id: 3,
+        subTitle: "Discover new ways to exercise and make your own workouts!",
+        liveLink: "https://gym-genius-9546c612d270.herokuapp.com/",
+        repoLink: "https://github.com/jonathanjjolsen/gym-genius",
+        overview: ['Gym Genius is an application that allows users to create workouts to plan their exercise routine. Using our vast array of different exercises, the user can choose from different categories to target specific muscle groups. This website aims to provide a modular experience for anyone looking to further their workout goals.', 'This web app is built using the MERN stack. It utilizes GraphQL queries and mutations to manipulate the user data. User profile information is protected and authenticated via JWT encoding. The front-end is built using the Create React App framework.', 'While Most of the data is stored via MongoDB Atlas, the avatar profile images are stored and referenced in an Amazon Web Services S3 bucket. As users change their profile picture, the old picture is deleted and the new one is saved using the unique user email as the file name.'],
+        screenshots: ['https://github.com/jonathanjjolsen/gym-genius/raw/main/client/public/Screenshots/gymGenius1.png', 'https://github.com/jonathanjjolsen/gym-genius/raw/main/client/public/Screenshots/gymGenius4.png', 'https://github.com/jonathanjjolsen/gym-genius/blob/main/client/public/Screenshots/gymGenius5.png', 'https://github.com/jonathanjjolsen/gym-genius/blob/main/client/public/Screenshots/gymGenius6.png', 'https://github.com/jonathanjjolsen/gym-genius/raw/main/client/public/Screenshots/gymGenius5.png', 'https://github.com/jonathanjjolsen/gym-genius/raw/main/client/public/Screenshots/gymGenius7.png', 'https://github.com/jonathanjjolsen/gym-genius/raw/main/client/public/Screenshots/GymGenius8.png']
+    },
+    {
         name: "Movie Finder",
         description: "A full-stack application that helps a user find new movies to watch, as well as gives he/she the opportunity to rate the movies on a scale from 1 to 10.",
         tech: "HTML, CSS, JavaScript, Node.js, Express.js, MYSQL, Sequelize, Heroku, HandleBars.js, Bcrypt, API, Animate CSS",
         tools: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MYSQL', 'Sequelize', 'Heroku', 'HandleBars.js', 'Bcrypt', 'API', 'Animate CSS'],
         image: cinema,
-        id: 3,
+        id: 4,
         subTitle: "Find new movies to watch, save them, and rate them!",
         liveLink: "https://movie-finder-bb.herokuapp.com/",
         repoLink: "https://github.com/Brent-Bew-Canon/Cinema-Finder",
@@ -47,38 +60,12 @@ export const elements = [
         screenshots: ['https://github.com/Brent-Bew-Canon/Cinema-Finder/raw/main/public/img/sh2.png', 'https://github.com/Brent-Bew-Canon/Cinema-Finder/raw/main/public/img/sh3.png']
     },
     {
-        name: "Social API",
-        description: "A MongoDB back-end for a mock social media site.",
-        tech: "JavaScript, MongoDB, Node.js",
-        tools: ['JavaScript', 'MongoDB', 'Node.js'],
-        image: social,
-        id: 4,
-        subTitle: "Manage your social media site on the back-end.",
-        liveLink: "#",
-        repoLink: "https://github.com/Brent-Bew-Canon/social-api",
-        overview: ['This web app models the functionality of the backend of a social media site. Users can create and are linked to "thoughts", the equivalent of posts, and can post "reactions" or comments to thoughts. This is the back-end portion only and does not have a GUI.', 'This app uses MongoDB for the database. Check out the GitHub Repo for a walkthrough video of the application'],
-        screenshots: []
-    },
-    {
-        name: "Tech Blogger",
-        description: "A mock blog about technology that lets users make accounts, create posts, and comment on posts.",
-        tech: "HTML, CSS, JavaScript, MYSQL, Node.js, Bootstrap",
-        tools: ['HTML', 'CSS', 'JavaScript', 'MYSQL', 'Node.js', 'Bootstrap'],
-        image: blogger,
-        id: 5,
-        subTitle: "Share your thoughts on this technology blog!",
-        liveLink: "#",
-        repoLink: "https://github.com/Brent-Bew-Canon/tech-blogger",
-        overview: ['The Tech Blogger app was made to replicate the functionality of a real working blog. Users can create profiles with their usernames and passwords hashed via Bcrypt. They can also create posts for everyone on the blog site to see', 'Each post a user creates is saved to their profile and available to edit later. Users can also comment on other posts and the post links that comment to their username and the time they commented. This app uses MYSQL and Sequelize for the database functionality'],
-        screenshots: ['https://github.com/Brent-Bew-Canon/tech-blogger/raw/master/assets/tech1.png', 'https://github.com/Brent-Bew-Canon/tech-blogger/raw/master/assets/tech2.png', 'https://github.com/Brent-Bew-Canon/tech-blogger/raw/master/assets/tech3.png', 'https://github.com/Brent-Bew-Canon/tech-blogger/raw/master/assets/tech4.png', 'https://github.com/Brent-Bew-Canon/tech-blogger/raw/master/assets/tech5.png', 'https://github.com/Brent-Bew-Canon/tech-blogger/raw/master/assets/tech6.png']
-    },
-    {
         name: "Super Q",
         description: "A landing page for beta testers for a music app in development.",
         tech: "HTML, CSS, JavaScript",
         tools: ['HTML', 'CSS', 'JavaScript'],
         image: superq,
-        id: 6,
+        id: 5,
         subTitle: "Sign up to be a beta tester for this new music app!",
         liveLink: "https://www.superqapp.com",
         repoLink: "https://github.com/Brent-Bew-Canon/superq",

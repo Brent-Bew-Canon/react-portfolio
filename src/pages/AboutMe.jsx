@@ -35,7 +35,7 @@ function AboutMe({ handlePageChange }) {
                         <h2 className="green-text fs-1 pb-4">My Skills</h2>
                         <div className="">
                             <div className="skills">
-                                {Tools(6)}
+                                {Tools(5)}
                             </div>
                         </div>
                     </div>

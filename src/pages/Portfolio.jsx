@@ -4,7 +4,7 @@ import { elements } from '../components/Elements'
 import '../App.css'
 
 function ProjectCard({ handlePageChange }) {
-    let projElements = elements.slice(0, 6)
+    let projElements = elements.slice(0, 5)
     return projElements.map(el =>
         <div className="row " key={el.name}>
             <div className="col-md-6">
